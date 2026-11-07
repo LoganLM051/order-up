@@ -19,3 +19,10 @@ for (let i = 0; i < prices.length; i++) {
 console.log("Total:" , total);
 
 document.querySelector("#total").textContent = "$" + total;
+
+// Bonus 2 - Tax//
+
+const tax = total * 0.08;
+const totalWithTax = total + tax;
+document.querySelector("#tax").textContent = "Tax : $" + tax.toFixed(2);
+document.querySelector("#total-with-tax").textContent = "Total with Tax : $" + totalWithTax.toFixed(2);
